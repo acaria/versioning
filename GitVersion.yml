@@ -1,0 +1,13 @@
+mode: ContinuousDeployment
+branches:
+  master:
+    mode: ContinuousDeployment
+  hotfix:
+    mode: ContinuousDeployment
+    tag: fix
+  pull-request:
+    mode: ContinuousDeployment
+    tag: pr
+ignore:
+  sha: []
+merge-message-formats: {}
