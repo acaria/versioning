@@ -2,10 +2,23 @@ mode: Mainline
 next-version: 0.1.0
 assembly-versioning-scheme: MajorMinorPatch
 assembly-file-versioning-scheme: MajorMinorPatchTag
+tag-prefix: '[vV]'
+major-version-bump-message: '\+semver:\s?(breaking|major)'
+minor-version-bump-message: '\+semver:\s?(feature|minor)'
+patch-version-bump-message: '\+semver:\s?(fix|patch)'
+no-bump-message: '\+semver:\s?(none|skip)'
 branches:
-  feature:
-    tag: alpha
   master:
     tag: ''
+  release:
+    tag: 'rc'
+  feature:
+    regex: ^feat(ures?)[/-]
+    tag: useBranchName
+  pull-request:
+    tag: 'pr'
+  hotfix:
+    regex: ^(hot)fix(es)?[/-]
+    tag: fix
 ignore:
   sha: []
