@@ -2,6 +2,9 @@ mode: Mainline
 next-version: 0.1.0
 assembly-versioning-scheme: MajorMinorPatch
 assembly-file-versioning-scheme: MajorMinorPatchTag
+legacy-semver-padding: 3
+build-metadata-padding: 3
+commits-since-version-source-padding: 3
 tag-prefix: '[vV]'
 major-version-bump-message: '\+semver:\s?(breaking|major)'
 minor-version-bump-message: '\+semver:\s?(feature|minor)'
