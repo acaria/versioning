@@ -1,13 +1,9 @@
-mode: ContinuousDeployment
+mode: Mainline
+next-version: 1.0.0
 branches:
-  master:
-    mode: ContinuousDeployment
-  hotfix:
-    mode: ContinuousDeployment
-    tag: fix
-  pull-request:
-    mode: ContinuousDeployment
-    tag: pr
+ feature:
+   tag: alpha
+ master:
+ tag: ''
 ignore:
-  sha: []
-merge-message-formats: {}
+ sha: []
