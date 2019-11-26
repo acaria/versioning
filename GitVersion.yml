@@ -3,16 +3,7 @@ tag-prefix: '[vV]'
 branches:
   master:
     mode: ContinuousDeployment
-    tag:
+    tag: ''
     increment: Patch
-    prevent-increment-of-merged-branch-version: false
+    prevent-increment-of-merged-branch-version: true
     track-merge-target: false
-  hotfix:
-    mode: ContinuousDeployment
-    tag: fix
-  pull-request:
-    mode: ContinuousDeployment
-    tag: pr
-ignore:
-  sha: []
-merge-message-formats: {}
