@@ -1,7 +1,12 @@
 mode: ContinuousDeployment
+tag-prefix: '[vV]'
 branches:
   master:
     mode: ContinuousDeployment
+    tag:
+    increment: Patch
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: false
   hotfix:
     mode: ContinuousDeployment
     tag: fix
