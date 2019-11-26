@@ -1,9 +1,11 @@
 mode: Mainline
-next-version: 1.0.0
+next-version: 0.1.0
+assembly-versioning-scheme: MajorMinorPatch
+assembly-file-versioning-scheme: MajorMinorPatchTag
 branches:
- feature:
-   tag: alpha
- master:
- tag: ''
+  feature:
+    tag: alpha
+  master:
+    tag: ''
 ignore:
- sha: []
+  sha: []
