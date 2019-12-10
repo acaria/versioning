@@ -13,6 +13,7 @@ no-bump-message: '\+semver:\s?(none|skip)'
 branches:
   master:
     tag: ''
+    increment: Patch
   release:
     tag: 'rc'
   feature:
